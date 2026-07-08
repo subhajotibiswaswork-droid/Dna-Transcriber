@@ -1,4 +1,3 @@
-"""Validation functions for DNA sequences."""
 
 VALID_BASES = {"A", "T", "G", "C"}
 """Set of valid DNA bases."""
