@@ -1,5 +1,8 @@
 from tools.validation import is_valid_dna
+
 from tools.transcription import transcribe
+
+from tools.reverse_complement import reverse_complement
 
 def main():
 
@@ -11,8 +14,10 @@ def main():
             continue
 
         rna = transcribe(dna)
+        rc = reverse_complement(dna)
 
         print(f"RNA sequence: {rna}")
+        print(f"Reverse complement: {rc}")
         break
 
 if __name__ == "__main__":
